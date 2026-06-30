@@ -1,0 +1,101 @@
+## Hmmm, we have a few keys and notes for you.
+## -----------------------------------------------
+## {PLAYER} => get player's name
+## {KILLER} => get the name of the player who killed you.
+## {FROM} => get old x:y:z in teleport-change and get old world name in world-change
+## {TO} => get new x:y:z in teleport-change and get new world name in world-change
+## {ITEM} => get item in killer's hand
+## {BLOCK} => get name the block that crushed you to death.
+
+date-format = "H:i:s"
+[teleport-change]
+custom = true
+message = "&aThe player {PLAYER} has just moved from {FROM} to {TO}."
+
+[world-change]
+custom = true
+message = "&aThe player {PLAYER} has just moved from {FROM} to {TO}"
+
+[server-full]
+custom = true
+message = "&cThe server is currently full, please try again later"
+
+[join]
+hiden = false
+custom = true
+message = "&aPlayer {PLAYER} has joined server!"
+
+[quit]
+hiden = false
+custom = true
+message = "&aPlayer {PLAYER} has quited server!"
+
+[death]
+hiden = false
+custom = true
+message = "&cYou Died!"
+
+[death.contact]
+hiden = false
+custom = true
+message = "&cOops! {PLAYER} was killed by {BLOCK}"
+
+[death.kill]
+hiden = false
+custom = true
+message = "&a{PLAYER} was killed by {KILLER} with {ITEM}"
+
+[death.projectile]
+hiden = false
+custom = true
+message = "&a{PLAYER} was killed by {KILLER} with arrow by {BOW}"
+
+[death.suffocation]
+hiden = false
+custom = true
+message = "&a{PLAYER} suffocated!"
+
+[death.fall]
+hiden = false
+custom = true
+message = "&a{PLAYER} fell from a high place"
+
+[death.fire]
+hiden = false
+custom = true
+message = "&a{PLAYER} went up in flames"
+
+[death.on-fire]
+hiden = false
+custom = true
+message = "&a{PLAYER} burned!"
+
+[death.lava]
+hiden = false
+custom = true
+message = "&a{PLAYER} tried swim in lava"
+
+[death.drowning]
+hiden = false
+custom = true
+message = "&a{PLAYER} drowned"
+
+[death.explosion]
+hiden = false
+custom = true
+message = "&a{PLAYER} exploded!"
+
+[death.void]
+hiden = false
+custom = true
+message = "&a{PLAYER} fell into the void!"
+
+[death.suicide]
+hiden = false
+custom = true
+message = "&a{PLAYER} committed suicide!"
+
+[death.magic]
+hiden = false
+custom = true
+message = "&a{PLAYER} was killed by a spell"
